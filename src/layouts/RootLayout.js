@@ -8,6 +8,7 @@ export default function RootLayout() {
           <h1>jobaRouter</h1>
           <NavLink to="/">home</NavLink>
           <NavLink to="about">About</NavLink>
+          <NavLink to="help">Help</NavLink>
         </nav>
       </header>
       <main>
