@@ -3,10 +3,7 @@ import { Link, useLoaderData } from "react-router-dom";
 export default function Careers() {
   const careers = useLoaderData();
 
-  if (!careers) {
-    return <div>Loading...</div>;
-  }
-
+ 
   return (
     <div className="careers"> 
       {careers.map((career) => (
