@@ -17,7 +17,6 @@ export default function Careers() {
 
 // data loader
 export const careersLoader = async () => {
-  const res = await fetch("/");
-
-  return res.json();
+  const res = await fetch("");
+  return res.json;
 };
