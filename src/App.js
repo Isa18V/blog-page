@@ -1,9 +1,9 @@
 import React from "react";
 import {
   createBrowserRouter,
+  createRoutesFromElements,
   Route,
   RouterProvider,
-  createRoutesFromElements,
 } from "react-router-dom";
 
 // pages
@@ -12,7 +12,7 @@ import About from "./pages/About";
 import Faq from "./pages/help/Faq";
 import Contact from "./pages/help/Contact";
 import NotFound from "./pages/NotFound.js";
-import Careers, { careersLoader } from "./pages/careers/Careers";
+import Careers from "./pages/careers/Careers";
 
 // layout
 import RootLayout from "./layouts/RootLayout";
@@ -29,7 +29,7 @@ const router = createBrowserRouter(
       </Route>
 
       <Route path="careers" element={<CareersLayout />}>
-        <Route index element={<Careers />} loader={careersLoader} />
+        <Route index element={<Careers />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />
